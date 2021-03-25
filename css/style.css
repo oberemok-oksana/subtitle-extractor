@@ -1,13 +1,20 @@
+
+html {
+  min-height: 100%;
+}
+
 body{
-  background-color: #e8d6cb;
-  height: 100%;
+  min-height: 100vh;
   margin:0px;
   padding:0px;
+  background-image: url(https://cdn.pixabay.com/photo/2020/03/14/17/01/flowers-4931217_1280.png);
 }
 .container{
    max-width: 1140px;
     margin: 0 auto;
     padding-top: 35px;
+    background-color: #e8d6cb;
+    min-height: calc(100vh - 35px);
 }
 .head_title {
   font-size: 36px;
@@ -32,7 +39,7 @@ body{
   align-items: center;
   justify-content: center;
   gap: 175px;
-  padding-top: 36px;
+  padding: 40px;
 }
 .center{
   margin: 0;
