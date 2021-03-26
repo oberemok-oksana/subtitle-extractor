@@ -10,5 +10,16 @@ window.addEventListener("DOMContentLoaded", () => {
       .replace(/^\d{2}:\d{2}:\d{2},\d{3} --> \d{2}:\d{2}:\d{2},\d{3}$/gm, "")
       .replace(/\n{3,}/g, "\n\n")
       .toLowerCase();
+    mySpinner();
   });
+
+  function mySpinner() {
+    submitBtn.classList.add("button--loading");
+    submitBtn.textContent = "";
+
+    setTimeout(() => {
+      submitBtn.classList.remove("button--loading");
+      submitBtn.textContent = "Transform!";
+    }, 200);
+  }
 });
