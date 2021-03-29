@@ -111,3 +111,11 @@ body{
     color: #fff;
     padding: 5px;
 }
+@media(max-width:575px){
+  .container{
+   max-width: 490px;
+}
+.head_title {
+    font-size: 30px;
+}
+}
