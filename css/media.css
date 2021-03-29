@@ -1,6 +1,7 @@
 @media (max-width: 575px) {
   .container {
     max-width: 450px;
+    padding-top: 2px;
   }
   .head_title {
     font-size: 27px;
