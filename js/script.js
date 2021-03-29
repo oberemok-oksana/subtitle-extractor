@@ -1,6 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
   const text = document.querySelector("#text");
   const submitBtn = document.querySelector(".submit_btn");
+  const copyBtn = document.querySelector(".copy_btn");
   let completedText = document.querySelector("#completed_text");
 
   submitBtn.addEventListener("click", (e) => {
@@ -21,4 +22,13 @@ window.addEventListener("DOMContentLoaded", () => {
       submitBtn.textContent = "Transform!";
     }, 200);
   }
+
+  function copyText() {
+    let copyText = document.getElementById("completed_text");
+    copyBtn.addEventListener("click", () => {
+      copyText.select();
+      document.execCommand("copy");
+    });
+  }
+  copyText();
 });
