@@ -1,9 +1,19 @@
-@media (max-width:575px){
-  .container{
-   max-width: 490px;
-   background-color: red;
-}
-.head_title {
-    font-size: 30px;
-}
+@media (max-width: 575px) {
+  .container {
+    max-width: 450px;
+  }
+  .head_title {
+    font-size: 27px;
+    padding-top: 0px;
+  }
+  .action_descr {
+    font-size: 17px;
+  }
+  .inputs {
+    flex-direction: column;
+    gap: 94px;
+  }
+  .center {
+    bottom: 43%;
+  }
 }
