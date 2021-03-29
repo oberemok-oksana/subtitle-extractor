@@ -15,9 +15,12 @@
   }
   .inputs {
     flex-direction: column;
-    gap: 94px;
+    gap: 116px;
   }
   .center {
-    bottom: 43%;
+    bottom: 46%;
+  }
+  .copy_btn {
+    top: 54px;
   }
 }
