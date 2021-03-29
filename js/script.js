@@ -26,8 +26,7 @@ window.addEventListener("DOMContentLoaded", () => {
   function copyText() {
     let copyText = document.getElementById("completed_text");
     copyBtn.addEventListener("click", () => {
-      copyText.select();
-      document.execCommand("copy");
+      navigator.clipboard.writeText(copyText.value);
     });
   }
   copyText();
