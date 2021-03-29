@@ -1,0 +1,9 @@
+@media (max-width:575px){
+  .container{
+   max-width: 490px;
+   background-color: red;
+}
+.head_title {
+    font-size: 30px;
+}
+}
