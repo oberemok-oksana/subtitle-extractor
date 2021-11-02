@@ -8,7 +8,11 @@ window.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     completedText.value = text.value
       .replace(/^\d+$/gim, "")
-      .replace(/^\d{2}:\d{2}:\d{2},\d{3} --> \d{2}:\d{2}:\d{2},\d{3}$/gm, "")
+      .replace(
+        /^\d{2,}:\d{2,}:\d{2,},\d{3,} --> \d{2,}:\d{2,}:\d{2,},\d{3,}$/gm,
+        ""
+      )
+      .replace(/<i>([\w\W\s.]+)<\/i>/gm, `"$1"`) //прямая речь
       .replace(/\n{3,}/g, "\n\n");
     mySpinner();
   });
