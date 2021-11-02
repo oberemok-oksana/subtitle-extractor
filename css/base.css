@@ -149,7 +149,8 @@ body {
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
-  top: 68px;
+  top: 100px;
+  left: 25px;
   z-index: 1;
   visibility: hidden;
 }
