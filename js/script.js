@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", () => {
     copyBtn.addEventListener("click", () => {
       navigator.clipboard.writeText(copyText.value);
       tooltipText.style.visibility = "visible";
-      setInterval(() => {
+      setTimeout(() => {
         tooltipText.style.visibility = "hidden";
       }, 1000);
     });
