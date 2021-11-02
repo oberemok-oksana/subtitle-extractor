@@ -135,3 +135,21 @@ body {
   padding: 5px;
   background-color: #99b4bd;
 }
+
+/* .tooltip {
+  position: relative;
+} */
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #fff;
+  color: #99b4bd;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  top: 68px;
+  z-index: 1;
+  visibility: hidden;
+}

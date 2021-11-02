@@ -29,8 +29,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
   function copyText() {
     let copyText = document.getElementById("completed_text");
+    let tooltipText = document.querySelector(".tooltiptext");
     copyBtn.addEventListener("click", () => {
       navigator.clipboard.writeText(copyText.value);
+      tooltipText.style.visibility = "visible";
+      setInterval(() => {
+        tooltipText.style.visibility = "hidden";
+      }, 1000);
     });
   }
   copyText();
