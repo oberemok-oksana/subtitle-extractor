@@ -6,17 +6,39 @@ body {
   min-height: 100vh;
   margin: 0px;
   padding: 0px;
-  /* background-image: url(https://cdn.pixabay.com/photo/2020/03/14/17/01/flowers-4931217_1280.png); */
-  background-color: #fff;
+  background: aliceblue;
+  font-family: "Rubik", sans-serif;
 }
 .container {
   max-width: 980px;
   margin: 0 auto;
-  padding-top: 35px;
   background-color: #fff;
   min-height: calc(100vh - 35px);
   box-shadow: 1px 2px 1px 2px #777;
 }
+
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(47, 90, 215, 1) 32%,
+    rgba(252, 250, 69, 1) 100%
+  );
+  padding: 30px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.flag-img {
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+}
+
 .head_title {
   font-size: 36px;
   font-weight: bold;
