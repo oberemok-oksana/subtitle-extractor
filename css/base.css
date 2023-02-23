@@ -47,7 +47,7 @@ body {
   font-weight: bold;
   text-align: center;
   color: #005bbc;
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 25px;
 }
 .blocks {
@@ -66,16 +66,9 @@ body {
   align-items: center;
   justify-content: center;
   gap: 175px;
-  padding: 40px;
+  padding: 55px 40px;
 }
-.center {
-  margin: 0;
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
+
 .left_block,
 .right_block {
   width: 100%;
@@ -86,7 +79,17 @@ body {
   background-color: #f8f8f8;
   font-size: 16px;
   resize: none;
-  box-shadow: 1px 2px 1px 1px #777;
+  box-shadow: 1px 1px 9px -1px #777;
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .btn {
@@ -141,7 +144,7 @@ body {
   }
 }
 .copy_btn {
-  position: absolute;
+  /* position: absolute; */
   right: 25%;
   top: 68px;
   background-color: #99b4bd;
@@ -150,7 +153,7 @@ body {
 }
 
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   min-height: 30px;
   width: 100%;
@@ -159,8 +162,9 @@ body {
 .footer_descr {
   text-align: center;
   color: #fff;
-  padding: 5px;
+  padding: 20px;
   background-color: #99b4bd;
+  border-top: 1px solid #738085;
 }
 
 .tooltiptext {
@@ -172,8 +176,7 @@ body {
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
-  top: 117px;
-  left: 17px;
+  bottom: -30%;
   z-index: 1;
   visibility: hidden;
 }
