@@ -157,14 +157,20 @@ body {
   bottom: 0;
   min-height: 30px;
   width: 100%;
-  background-color: #d3e7f4;
 }
+
+.footer::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 65%;
+  border-top: 2px solid #738085;
+}
+
 .footer_descr {
   text-align: center;
-  color: #fff;
+  color: #738085;
   padding: 20px;
-  background-color: #99b4bd;
-  border-top: 1px solid #738085;
 }
 
 .tooltiptext {
