@@ -6,13 +6,12 @@ body {
   min-height: 100vh;
   margin: 0px;
   padding: 0px;
-  background: aliceblue;
   font-family: "Rubik", sans-serif;
 }
 .container {
   max-width: 980px;
   margin: 0 auto;
-  min-height: calc(100vh - 35px);
+  /* min-height: calc(100vh - 35px); */
 }
 
 .gradient {
@@ -23,7 +22,6 @@ body {
   );
   padding: 30px 0;
   text-align: center;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +51,7 @@ body {
 .blocks {
   position: relative;
   padding-bottom: 30px;
-  min-height: 400px;
+  min-height: 300px;
   /* margin-top: 40px; */
 }
 .action_descr {
@@ -61,9 +59,17 @@ body {
   font-size: 21px;
   color: #7e959c;
 }
+
+.action_descr::after {
+  content: "";
+  display: block;
+  margin: 20px auto;
+  width: 65%;
+  border-top: 2px solid #738085;
+}
+
 .inputs {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 175px;
   padding: 55px 40px;
